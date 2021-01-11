@@ -76,7 +76,7 @@ li {
     text-align: center;
 }
 
-li.border {
+li#border {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -110,11 +110,12 @@ h3 {
 }
 
 p {
-    height: 50vw;
+    height: 70px;
     margin-bottom: 1vw;
     padding: 1vw;
     clear: both;
     background-color: lightgray;
+    overflow: auto;
 }
 
 .internal-link {
@@ -127,10 +128,50 @@ p {
 
 
 
+/***|| FOOTER ||***/
+
+.panel-footer {
+    background-color: lightgray;
+}
+
+.panel-footer, .row p {
+    height: 17vw;
+}
+
+#address p {
+    height: 6vw;
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+}
+
+#testimonials p {
+    height: 5vw;
+    background-color: rgb(231, 231, 231);
+    margin: 10px 0 5px 0;
+}
+
+.row span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.text-center {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/***|| END FOOTER ||***/
+
+
+
 /***|| RESPONSIVE DESIGN ||***/
   
 /**| MEDIUM DEVICES ONLY |**/
 @media (min-width: 962px) {
+    .row p {
+        height: 100vw;
+        margin-bottom: 0;
+    }
 }    
 
 /**| SMALL DEVICES ONLY |**/
@@ -139,8 +180,22 @@ p {
         font-size: 1.2em;
     }
 
-    p {
-        height: 200vw;
+    .container .row p {
+        height: 100vw;
+        margin-bottom: 0;
+    }
+
+    .panel-footer, .row p {
+        height: 25vw;
+    }
+
+    #address p {
+        height: 7vw;
+        font-size: .7em;
+    }
+    
+    #testimonials p {
+        height: 7vw;
     }
 }
 
@@ -158,5 +213,19 @@ p {
     .internal-link {
         font-size: 1.1em;
         margin-left: 35%;
+    }
+
+    .panel-footer, .row p {
+        height: 150vw;
+        margin-bottom: 0;
+    }
+
+    #address p {
+        height: 14vw;
+        font-size: .7em;
+    }
+    
+    #testimonials p {
+        height: 14vw;
     }
 }
