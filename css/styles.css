@@ -1,0 +1,162 @@
+/***|| BASE STYLES ||***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 2000px;
+}
+
+/***|| END BASE STYLES ||***/
+
+
+
+/***|| HEADER ||***/
+
+.container {
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+header .navbar {
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: lightgray;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+
+#custom .navbar-toggle {
+    background-color: initial; 
+    border: 1px solid black;
+}
+
+#custom .navbar-toggle:hover {
+    border: 1px solid white;
+}
+
+#custom .navbar-toggle span.icon-bar {
+    background-color: black;
+}
+
+#custom .navbar-toggle span.icon-bar:hover {
+    background-color: white;
+}
+
+#bs-navbar-collapse {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-list {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#nav-list a {
+    color: black;
+}
+
+li {
+    padding: 0;
+    text-align: center;
+}
+
+li.border {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/***|| END HEADER ||***/
+
+
+
+/***|| MAIN ||***/
+
+.container {
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+h1.text-center {
+    margin: 3vw;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 1vw;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+p {
+    height: 50vw;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    clear: both;
+    background-color: lightgray;
+}
+
+.internal-link {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(115, 197, 224);
+}
+
+/***|| END MAIN ||***/
+
+
+
+/***|| RESPONSIVE DESIGN ||***/
+  
+/**| MEDIUM DEVICES ONLY |**/
+@media (min-width: 962px) {
+}    
+
+/**| SMALL DEVICES ONLY |**/
+@media (min-width: 768px) and (max-width: 991px) {
+    .internal-link {
+        font-size: 1.2em;
+    }
+
+    p {
+        height: 200vw;
+    }
+}
+
+    /**| EXTRA SMALL DEVICES ONLY |**/
+@media (max-width: 767px) {
+    h3, p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    p {
+        height: 200vw;
+    }
+
+    .internal-link {
+        font-size: 1.1em;
+        margin-left: 35%;
+    }
+}
